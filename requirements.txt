@@ -3,8 +3,8 @@ streamlit-chat
 langchain-community
 google-generativeai
 langchain-text-splitters
-langchain-chroma
 langchain-google-genai
 langchain-core
 PyMuPDF
-sqlite3
+langchain-chroma==0.0.10
+
