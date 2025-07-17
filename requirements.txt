@@ -1,9 +1,11 @@
 streamlit
 streamlit-chat
 langchain-community
-google-generativeai
+langchain-core
 langchain-text-splitters
 langchain-google-genai
-langchain-core
+google-generativeai
 PyMuPDF
-faiss-cpu
+langchain-chroma==0.0.10
+chromadb==0.3.21
+pysqlite3-binary
