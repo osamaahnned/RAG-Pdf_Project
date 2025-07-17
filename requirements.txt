@@ -6,5 +6,4 @@ langchain-text-splitters
 langchain-google-genai
 langchain-core
 PyMuPDF
-langchain-chroma==0.0.10
-chromadb==0.3.21
+faiss-cpu
