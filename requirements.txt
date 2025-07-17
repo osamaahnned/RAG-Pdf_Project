@@ -6,6 +6,4 @@ langchain-text-splitters
 langchain-google-genai
 google-generativeai
 PyMuPDF
-langchain-chroma==0.0.10
 chromadb==0.3.21
-pysqlite3-binary
