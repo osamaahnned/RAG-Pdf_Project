@@ -18,7 +18,6 @@ RAGPROJECT is a Retrieval-Augmented Generation (RAG) chatbot platform built with
 RAGPROJECT/
 │
 ├── data/                  # Stores datasets and persistent vector DBs
-│   ├── chroma_langchain_db/   # (Ignored in version control)
 │   └── technology.pdf     # Example PDF for processing
 │
 ├── env/                  # (Optional) Python virtual environment
