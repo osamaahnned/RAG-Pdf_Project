@@ -1,5 +1,22 @@
-/env
-/main.ipynb
-/RAG1.ipynb
-/Rag2.py
-/rag3.ipynb
+# Python virtual environment
+/env/
+
+# Jupyter notebook checkpoints
+**/.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore all .pyc files
+*.pyc
+
+# Ignore database and binary files
+*.sqlite3
+*.bin
+
+# Ignore VSCode settings (optional)
+.vscode/
