@@ -1,8 +1,16 @@
 # RAGPROJECT
 
-## Project Overview
+## Overview
 
-This project is focused on Retrieval-Augmented Generation (RAG) using Python, with support for Jupyter notebooks and persistent data storage. It includes modular scripts, a dedicated notebooks directory, and a data directory for storing embeddings and resources.
+RAGPROJECT is a Retrieval-Augmented Generation (RAG) chatbot platform built with Python and Streamlit. It enables users to upload PDF documents and interactively query their contents using advanced language models and vector search. The project leverages LangChain, ChromaDB, and Google Generative AI for document processing and retrieval.
+
+## Features
+
+- **PDF Upload & Parsing:** Upload PDF files and extract their content for analysis.
+- **Text Chunking:** Automatic splitting of documents into manageable chunks for efficient retrieval.
+- **Vector Database:** Uses ChromaDB for fast similarity search over document embeddings.
+- **Conversational AI:** Query your documents using Google Generative AI models via a chat interface.
+- **Streamlit UI:** Clean, interactive web interface for seamless user experience.
 
 ## Folder Structure
 
@@ -10,8 +18,7 @@ This project is focused on Retrieval-Augmented Generation (RAG) using Python, wi
 RAGPROJECT/
 │
 ├── data/                  # Stores datasets and persistent vector DBs
-│   ├── chroma_langchain_db/   # Chroma vector database files
-│   │   └── 130c4f94-7688-46f6-b020-02e89289e1cf/  # Internal DB files
+│   ├── chroma_langchain_db/   # (Ignored in version control)
 │   └── technology.pdf     # Example PDF for processing
 │
 ├── env/                  # (Optional) Python virtual environment
@@ -22,12 +29,13 @@ RAGPROJECT/
 ├── src/                  # Source code modules and scripts
 │   └── ragproject.py     # Main Python script for the project
 │
+├── requirements.txt      # Python dependencies
 ├── README.md             # Project documentation
 ├── .gitignore            # Git ignore file
 └── ...                   # Other project files and folders
 ```
 
-## Setup Instructions
+## Installation
 
 1. **Clone the repository:**
    ```bash
@@ -43,31 +51,31 @@ RAGPROJECT/
    env\Scripts\activate
    ```
 3. **Install dependencies:**
-   (Add a `requirements.txt` file if not present, or install as needed)
    ```bash
    pip install -r requirements.txt
    ```
 
 ## Usage
 
-- Run the main script:
+- **Run the Streamlit app:**
   ```bash
-  python src/ragproject.py
+  streamlit run src/ragproject.py
   ```
-- Explore or run the Jupyter notebooks for experimentation:
+- **Explore Jupyter notebooks:**
   ```bash
   jupyter notebook
   ```
 
+## Contributing
+
+Contributions are welcome! Please open issues or submit pull requests for improvements, bug fixes, or new features.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 ## Notes
 
-- The `data/chroma_langchain_db` directory contains files for a Chroma vector database, likely used for storing embeddings.
-- The `notebooks/` directory contains all Jupyter notebooks for the project.
-- The `src/` directory contains all main Python scripts and modules.
-- The `data/technology.pdf` file is an example PDF for processing.
-
-## Suggestions for Further Organization
-
-- Add a `requirements.txt` file listing all dependencies.
-- Use the `src/` directory for all new scripts and modules.
-- Keep the root directory clean by storing all resources and code in their respective folders.
+- The `data/chroma_langchain_db/` directory is ignored in version control to avoid uploading large or sensitive database files.
+- All dependencies are listed in `requirements.txt`.
+- For production or deployment, review and update the `.gitignore` and dependency files as needed.

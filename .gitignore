@@ -14,9 +14,14 @@ Thumbs.db
 # Ignore all .pyc files
 *.pyc
 
-# Ignore database and binary files
+# Ignore Chroma database and binary files
+data/chroma_langchain_db/
 *.sqlite3
 *.bin
+
+# Ignore temp files
+*.tmp
+*.temp
 
 # Ignore VSCode settings (optional)
 .vscode/

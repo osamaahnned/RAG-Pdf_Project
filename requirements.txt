@@ -1,0 +1,9 @@
+streamlit
+streamlit-chat
+langchain-community
+google-generativeai
+langchain-text-splitters
+langchain-chroma
+langchain-google-genai
+langchain-core
+PyMuPDF 
